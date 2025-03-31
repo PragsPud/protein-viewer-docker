@@ -1,0 +1,12 @@
+{
+  "name": "protein-structure-viewer",
+  "version": "1.0.0",
+  "description": "A containerized 3D protein structure viewer",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

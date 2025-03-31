@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Protein Structure Viewer</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://3dmol.csb.pitt.edu/build/3Dmol-min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>3D Protein Structure Viewer</h1>
+        <div class="search-box">
+            <input type="text" id="pdb-id" placeholder="Enter PDB ID (e.g., 1mbn)" value="1mbn">
+            <button id="view-button">View Structure</button>
+        </div>
+        <div id="controls-info">
+            <p>Controls: <span>Left-click drag to rotate | Scroll to zoom | Right-click drag to pan</span></p>
+        </div>
+        <div id="viewer-container">
+            <div id="protein-viewer" style="width: 100%; height: 500px; position: relative;"></div>
+        </div>
+    </div>
+    <script src="/js/viewer.js"></script>
+</body>
+</html>
