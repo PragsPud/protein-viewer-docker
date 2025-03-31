@@ -20,7 +20,7 @@ The main branch contains the complete Docker implementation for containerized de
 For containerized deployment:
 
 ### Clone the repository
-`git clone https://github.com/PragsPud/protein-viewer.git` 
+`git clone https://github.com/pragspud/protein-viewer.git` 
 
 `cd protein-viewer`
 
@@ -31,6 +31,27 @@ For containerized deployment:
 `docker run -p 8080:8080 protein-viewer`
 
 ### Then visit http://localhost:8080 in your browser
+
+## Running from GitHub Container Registry
+
+You can run this protein viewer directly from the pre-built container on GitHub Container Registry:
+
+### Pull the Docker image
+`docker pull ghcr.io/pragspud/protein-viewer-docker:latest`
+
+### Run the container
+`docker run -p 8080:8080 ghcr.io/pragspud/protein-viewer-docker:latest`
+
+Then open your browser and navigate to http://localhost:8080 to start using the protein viewer.
+
+You can also use a specific version by replacing `latest` with a specific tag or SHA.
+
+### Verifying Image Signature
+
+This image is signed using Cosign. To verify the signature:
+
+`cosign verify ghcr.io/pragspud/protein-viewer-docker:latest`
+
 
 ## GitHub Pages
 
