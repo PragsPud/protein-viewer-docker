@@ -37,10 +37,10 @@ For containerized deployment:
 You can run this protein viewer directly from the pre-built container on GitHub Container Registry:
 
 ### Pull the Docker image
-`docker pull ghcr.io/pragspud/protein-viewer-docker:latest`
+`docker pull ghcr.io/pragspud/protein-viewer-docker:main`
 
 ### Run the container
-`docker run -p 8080:8080 ghcr.io/pragspud/protein-viewer-docker:latest`
+`docker run -p 8080:8080 ghcr.io/pragspud/protein-viewer-docker:main`
 
 Then open your browser and navigate to http://localhost:8080 to start using the protein viewer.
 
