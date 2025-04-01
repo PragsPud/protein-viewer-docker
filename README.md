@@ -44,13 +44,13 @@ You can run this protein viewer directly from the pre-built container on GitHub 
 
 Then open your browser and navigate to http://localhost:8080 to start using the protein viewer.
 
-You can also use a specific version by replacing `latest` with a specific tag or SHA.
+You can also use a specific version by replacing `main` with a specific tag or SHA.
 
 ### Verifying Image Signature
 
 This image is signed using Cosign. To verify the signature:
 
-`cosign verify ghcr.io/pragspud/protein-viewer-docker:latest`
+`cosign verify ghcr.io/pragspud/protein-viewer-docker:main`
 
 
 ## GitHub Pages
